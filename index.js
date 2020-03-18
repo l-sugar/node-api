@@ -12,7 +12,7 @@ const countries = async country => {
 	if (country === undefined) {
 		result = await fetch('https://corona.lmao.ninja/countries');
 	} else {
-		result = await fetch(`https://corona.lmao.ninja/${country}`);
+		result = await fetch(`https://corona.lmao.ninja/countries/${country}`);
 	}
 	return result.json();
 };
