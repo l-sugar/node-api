@@ -13,6 +13,9 @@ const countries = async country => {
 		result = await fetch('https://corona.lmao.ninja/countries');
 	} else {
 		result = await fetch(`https://corona.lmao.ninja/countries/${country}`);
+		if (typeof result == 'string') {
+			return result;
+		}
 	}
 	return result.json();
 };

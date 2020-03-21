@@ -1,5 +1,5 @@
 {
-	"name": "covid19",
+	"name": "@louis.sugar/covid19",
 	"dependencies": {
 		"node-fetch": "^2.6.0"
 	},
